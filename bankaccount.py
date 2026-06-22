@@ -20,10 +20,10 @@ class BankAccount:
 Joe = BankAccount()
 John = BankAccount()
 
-Joe.balance = 5000
-John.balance = 3000
+Joe.balance = 0
+John.balance = 0
 
-print("Account 1:")
+print("Joe")
 Joe.display_balance()
 Joe.deposit(2000)
 Joe.withdraw(1500)
@@ -31,9 +31,9 @@ Joe.display_balance()
 
 print("\n")
 
-print("Account 2:")
+print("John")
 John.display_balance()
 John.deposit(1000)
 John.withdraw(5000)
-John.withdraw(2000)
+John.withdraw(1000)
 John.display_balance()
