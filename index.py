@@ -13,12 +13,7 @@ class LibraryBook:
 book1 = LibraryBook("Python Programming", "John Smith", 101)
 book2 = LibraryBook("Data Science with Python", "Jane Doe", 102)
 book3 = LibraryBook("Machine Learning Basics", "Alice Johnson", 103)
-book4 = LibraryBook("Deep Learning Fundamentals", "Bob Brown", 104)
-
-
-
 
 book1.display_info()
 book2.display_info()
 book3.display_info()
-book4.display_info()
