@@ -30,4 +30,3 @@ ticket3 = Ticket("Interstellar", 0, 2)
 
 ticket1.display()
 ticket2.display()
-ticket3.display()
