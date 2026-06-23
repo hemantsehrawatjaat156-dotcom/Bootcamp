@@ -30,7 +30,7 @@ for product in products:
     print(f"Product: {product.name}")
     print(f"Price: ₹{product.price}")
     print(f"Quantity: {product.quantity}")
-    print(f"Total Value: ₹{value}")
+    print(f"Total Value: ₹{value}")         
     print("-" * 30)
 
-print(f"Grand Total Inventory Value: ₹{grand_total}")
+print(f"Grand Total Value of Inventory: ₹{grand_total}")
