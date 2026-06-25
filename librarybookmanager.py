@@ -15,13 +15,3 @@ class Book:
         if n > self.__copies:
             raise ValueError("Not enough copies")
         self.__copies -= n
-        print("Checked out:", n)
-
-    def return_book(self, n):
-        self.__copies += n
-        print("Returned:", n)
-
-b = Book("123", "Python", "XYZ", 5)
-b.checkout(2)
-b.return_book(1)
-print(b.available)
