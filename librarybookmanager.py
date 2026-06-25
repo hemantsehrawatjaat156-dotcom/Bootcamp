@@ -11,7 +11,7 @@ class Book:
     def available(self):
         return self.__copies
 
-   def checkout(self, n):
+    def checkout(self, n):
         if n > self.__copies:
             raise ValueError("Not enough copies")
         self.__copies -= n
