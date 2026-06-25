@@ -9,8 +9,8 @@ class animal:
     def __str__(self):
         return f"Animal({self.name})"
     
-class dog(animal):
-    def __init__(self, name):
+class Dog(animal):
+    def __init__(self, name, breed):
         super().__init__(name, "Woof")
         self.breed = breed
 
@@ -20,4 +20,3 @@ class dog(animal):
     d = Dog("Bruno", "Labrador")
     print(d.speak())
     print(d.fetch())
-    
