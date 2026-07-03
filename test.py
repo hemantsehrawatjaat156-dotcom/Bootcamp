@@ -1,4 +1,4 @@
-class animal:
+class Animal:
     def __init__(self, name, sound):
         self.name = name
         self.sound = sound
@@ -9,7 +9,8 @@ class animal:
     def __str__(self):
         return f"Animal({self.name})"
     
-class Dog(animal):
+    
+class Dog(Animal):
     def __init__(self, name, breed):
         super().__init__(name, "Woof")
         self.breed = breed
