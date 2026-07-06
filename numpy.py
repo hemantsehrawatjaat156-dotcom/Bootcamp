@@ -1,6 +1,6 @@
 import numpy as np
 
-arr = (np.arr(1, 21) ** 2 + 1).reshape(4, 5)
+arr = (np.arange(1, 21) ** 2 + 1).reshape(4, 5)
 
 print("Original Matrix:")
 print(arr)
