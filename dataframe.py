@@ -14,3 +14,7 @@ print(df['Name'])
 df['Salary'] = [50000, 60000, 70000, 80000, 90000]
 print(df)
 
+print(df.loc[1])
+print(df.iloc[2])
+print(df.iloc[1:3])
+
