@@ -51,3 +51,47 @@ console.log("Random Number:", randomNumber);
 // }
 
 // testScope();
+// function greet(name) {
+//     console.log(`Hello, ${name}!`);
+// }
+//  function getUserInput(callback) {
+//     const name = "Alice";
+//     callback(name);
+//  } 
+
+//  getUserInput(greet);
+
+// function calculate(num1, num2, operationcallback) {
+//     return operationcallback(num1, num2);
+// }
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// const sum = calculate(5, 3, add);
+// console.log("Sum:", sum);
+
+// const difference = calculate(10, 4, (a, b) => a - b);
+// console.log("Difference:", difference);
+
+const car = {
+    make: "Toyota",
+    model: "Camry",
+    year: 2020,
+};
+
+// console.log("full car object:", car);
+// console.log("Car model:", car.model);
+console.log("Original car object:", car);
+
+car.year = 2021;
+
+car.color = "Red";
+
+console.log("Updated car object:", car);
+
+let propToAccess = "make";
+console.log('the car' ${propToAccess} is ${car[propToAccess]}`);
+
+
