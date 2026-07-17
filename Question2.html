@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Vault</title>
+</head>
+<body>
+
+<h2>Bank Account</h2>
+
+<script>
+
+class Account {
+    constructor() {
+        this.balance = 0;
+        this.history = [];
+    }
+
+    deposit(amount) {
+        this.balance += amount;
+        this.history.push("Deposit: " + amount);
+    }
+
+    withdraw(amount) {
+        if (amount > this.balance) {
+            document.write("Insufficient Balance<br>");
+            return;
+        }
+
+        this.balance -= amount;
+        this.history.push("Withdraw: " + amount);
+    }
+
+    getTransactionHistory() {
+        return this.history;
+    }
+}
+
+let acc = new Account();
+
+acc.deposit(5000);
+acc.withdraw(2000);
+acc.withdraw(4000);
+
+document.write("Balance: " + acc.balance + "<br><br>");
+
+document.write("<b>Transaction History</b><br>");
+
+for(let i=0; i<acc.history.length; i++){
+    document.write(acc.history[i] + "<br>");
+}
+
+</script>
+
+</body>
+</html>

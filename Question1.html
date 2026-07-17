@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payroll Engine</title>
+</head>
+<body>
+
+<h1>hello</h1>
+
+<script>
+
+
+class Employee {
+    constructor(id, name, baseSalary) {
+        if (new.target === Employee) {
+            throw new Error("Cannot create Employee object");
+        }
+        this.id = id;
+        this.name = name;
+        this.baseSalary = baseSalary;
+    }
+
+    calculateSalary() {
+        throw new Error("Override this method");
+    }
+}
+
+class FullTimeEmployee extends Employee {
+    constructor(id, name, baseSalary, bonus) {
+        super(id, name, baseSalary);
+        this.bonus = bonus;
+    }
+
+    calculateSalary() {
+        return this.baseSalary + this.bonus;
+    }
+}
+
+class ContractEmployee extends Employee {
+    constructor(id, name, hoursWorked, hourlyRate) {
+        super(id, name, 0);
+        this.hoursWorked = hoursWorked;
+        this.hourlyRate = hourlyRate;
+    }
+
+    calculateSalary() {
+        return this.hoursWorked * this.hourlyRate;
+    }
+}
+
+
+class CommissionEmployee extends Employee {
+    constructor(id, name, totalSales, commissionPercentage) {
+        super(id, name, 0);
+        this.totalSales = totalSales;
+        this.commissionPercentage = commissionPercentage;
+    }
+
+    calculateSalary() {
+        return (this.totalSales * this.commissionPercentage) / 100;
+    }
+}
+
+let emp1 = new FullTimeEmployee(1, "Rahul", 50000, 10000);
+let emp2 = new ContractEmployee(2, "Amit", 120, 400);
+let emp3 = new CommissionEmployee(3, "Priya", 200000, 5);
+
+
+console.log(emp1.name, "Salary =", emp1.calculateSalary());
+console.log(emp2.name, "Salary =", emp2.calculateSalary());
+console.log(emp3.name, "Salary =", emp3.calculateSalary());
+
+</script>
+
+</body>
+</html>
