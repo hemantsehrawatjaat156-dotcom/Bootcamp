@@ -75,11 +75,11 @@ console.log("Random Number:", randomNumber);
 // const difference = calculate(10, 4, (a, b) => a - b);
 // console.log("Difference:", difference);
 
-const car = {
-    make: "Toyota",
-    model: "Camry",
-    year: 2020,
-};
+// const car = {
+//     make: "Toyota",
+//     model: "Camry",
+//     year: 2020,
+// };
 
 // console.log("full car object:", car);
 // console.log("Car model:", car.model);

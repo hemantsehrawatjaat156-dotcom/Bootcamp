@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Record</title>
+</head>
+<body>
+
+<h2>Top Performers</h2>
+
+<script>
+
+let students = [
+    {name:"Alice", avg:85},
+    {name:"Bob", avg:70},
+    {name:"John", avg:92},
+    {name:"Riya", avg:60}
+];
+
+
+students.sort((a,b) => b.avg - a.avg);
+
+document.write("<h3>report_card.txt</h3>");
+
+for(let s of students){
+    document.write(s.name + " : " + s.avg + "<br>");
+}
+
+document.write("<br><h3>top_performers.txt</h3>");
+
+for(let s of students){
+    if(s.avg >= 80){
+        document.write(s.name + " : " + s.avg + "<br>");
+    }
+}
+
+</script>
+
+</body>
+</html>

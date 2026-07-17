@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Challenge</title>
+
+<style>
+
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100px;
+    background:lightblue;
+    border:1px solid black;
+    
+}
+
+@media(max-width:600px){
+    .container{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+
+</head>
+<body>
+
+<h2>Enterprise Registration</h2>
+
+<div class="container">
+
+<div class="box">Personal Details</div>
+
+<div class="box">Ticket Type</div>
+
+<div class="box">Payment</div>
+
+<div class="box">Submit</div>
+
+</div>
+
+</body>
+</html>

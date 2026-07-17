@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hamburger Menu</title>
+
+<style>
+
+#menu-toggle{
+    display:none;
+}
+
+label{
+    font-size:25px;
+    cursor:pointer;
+}
+
+nav{
+    display:none;
+    background:lightblue;
+    padding:10px;
+}
+
+#menu-toggle:checked ~ nav{
+    display:block;
+}
+
+nav a{
+    display:block;
+    text-decoration:none;
+    padding:5px;
+    color:black;
+}
+
+</style>
+
+</head>
+<body>
+
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle">☰ Menu</label>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+</body>
+</html>
